@@ -66,8 +66,8 @@
 	// Copy or Update the VideoConfig File;
    
     NSString *domain = appDelegate.DomainName;
-    NSString *queryFeed = [NSString stringWithFormat:@"%@/iosStream/maths/MathsConfig.xml",domain]; 
-    NSString *Dir = [appDelegate.applicationDocumentsDirectory stringByAppendingPathComponent:@"MathsConfig.xml"];
+    NSString *queryFeed = [NSString stringWithFormat:@"%@/iosStream/maths/MathsConfig_iPhone.xml",domain]; 
+    NSString *Dir = [appDelegate.applicationDocumentsDirectory stringByAppendingPathComponent:@"MathsConfig_iPhone.xml"];
     
          
    
@@ -124,7 +124,7 @@
     [appDelegate SubscriptionStatus: DeviceID];*/
     
         
-    NSString *Dir = [appDelegate.applicationDocumentsDirectory stringByAppendingPathComponent:@"MathsConfig.xml"]; 
+    NSString *Dir = [appDelegate.applicationDocumentsDirectory stringByAppendingPathComponent:@"MathsConfig_iPhone.xml"]; 
    [self MyParser:Dir];
     
     
@@ -174,7 +174,7 @@
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     //NSLog(@"%@", appDelegate.TempSubscibedProducts);
    
-    NSString *Dir = [appDelegate.applicationDocumentsDirectory stringByAppendingPathComponent:@"MathsConfig.xml"];
+    NSString *Dir = [appDelegate.applicationDocumentsDirectory stringByAppendingPathComponent:@"MathsConfig_iPhone.xml"];
     [self AdjustProductSubscribedTo];
      //NSLog(@"%@", appDelegate.TempSubscibedProducts);
      //NSLog(@"%@",  ProductsSubscibedTo);
@@ -203,7 +203,7 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     NSString *domain = appDelegate.DomainName;
-    NSString *queryFeed = [NSString stringWithFormat:@"%@/iosStream/maths/MathsConfig.xml", domain];
+    NSString *queryFeed = [NSString stringWithFormat:@"%@/iosStream/maths/MathsConfig_iPhone.xml", domain];
 	NSURLRequest *theRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:queryFeed]];
     NSURLResponse *resp = nil; 
     NSError *err = nil;

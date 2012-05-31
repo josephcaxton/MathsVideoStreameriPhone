@@ -304,7 +304,7 @@
 		7CC030ED157666C10025C598 /* HowtoUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B1B615762EC50068A6A4 /* HowtoUse.m */; };
 		7CC030F3157667810025C598 /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC030F2157667810025C598 /* MathsBackground.png */; };
 		7CC031041576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */; };
-		7CC031061576795A0025C598 /* LearnersCloudTermsonapps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031051576795A0025C598 /* LearnersCloudTermsonapps.pdf */; };
+		7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -625,7 +625,7 @@
 		7CA2B3DF157648780068A6A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CC030F2157667810025C598 /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
 		7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer_iphone.pdf; sourceTree = "<group>"; };
-		7CC031051576795A0025C598 /* LearnersCloudTermsonapps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LearnersCloudTermsonapps.pdf; sourceTree = "<group>"; };
+		7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LearnersCloudTermsonapps.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1040,7 +1040,7 @@
 				7CA2B2B315762F430068A6A4 /* img249.png */,
 				7CA2B2B415762F430068A6A4 /* img250.png */,
 				7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */,
-				7CC031051576795A0025C598 /* LearnersCloudTermsonapps.pdf */,
+				7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */,
 			);
 			name = "Video Images";
 			sourceTree = "<group>";
@@ -1382,7 +1382,7 @@
 				7CA2B3BE157634470068A6A4 /* MainWindow.xib in Resources */,
 				7CC030F3157667810025C598 /* MathsBackground.png in Resources */,
 				7CC031041576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf in Resources */,
-				7CC031061576795A0025C598 /* LearnersCloudTermsonapps.pdf in Resources */,
+				7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
