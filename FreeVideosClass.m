@@ -480,10 +480,9 @@
 		
 	}
     
-    // This is a fix a problem on Iphone Status bar is going on top of the navigationcontroller.
+    // This is to fix a problem on Iphone. Status bar is going on top of the navigationcontroller.
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-	
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];	
 }
 
 
