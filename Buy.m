@@ -185,6 +185,7 @@ int dontShowPriceList = 0;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
     }
     
 	SKProduct *product = [SortedDisplayProducts objectAtIndex:indexPath.row];
