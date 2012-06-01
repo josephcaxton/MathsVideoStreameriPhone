@@ -93,6 +93,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    
+    
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     if(appDelegate.UserEmail == nil){
         
@@ -603,11 +605,12 @@
     else
     {
     
+        
         FreeVideos.frame = CGRectMake(80,5, 280, 34);
         BtnTransfermysubscription.frame = CGRectMake(240 ,160, 120, 34);
         ImageView.frame = CGRectMake(105,45, 240, 100);
         FirstView.frame = CGRectMake(0, 0, SCREEN_WIDTH , SCREEN_HEIGHT + 80);
-        LoginViaLearnersCloud.frame = CGRectMake(80,160, 120, 34);
+        LoginViaLearnersCloud.frame = CGRectMake(80,160, 120, 34); 
         
     }
     

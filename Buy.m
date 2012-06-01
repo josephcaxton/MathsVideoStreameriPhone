@@ -9,6 +9,7 @@
 #import "Buy.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <netinet/in.h>
+#import "CustomCell.h"
 
 @implementation Buy
 
@@ -176,16 +177,27 @@ int dontShowPriceList = 0;
 	
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    return 100;
+}
+
+
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
-        cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+        cell = [[CustomCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell.textLabel.lineBreakMode = UILineBreakModeTailTruncation;
+        cell.textLabel.numberOfLines = 0;
+        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:12.0];
+             
+
     }
     
 	SKProduct *product = [SortedDisplayProducts objectAtIndex:indexPath.row];
@@ -198,7 +210,7 @@ int dontShowPriceList = 0;
 	UIButton *BuyNow = [UIButton buttonWithType:UIButtonTypeRoundedRect];  
 	
 	//[BuyNow setTitle:@""  forState:UIControlStateNormal];
-	BuyNow.frame = CGRectMake(638, 0, 75, 44);
+	BuyNow.frame = CGRectMake(178, 30, 75, 44);
 	BuyNow.tag = indexPath.row;
 	[BuyNow addTarget:self action:@selector(BuyVideo:) forControlEvents:UIControlEventTouchUpInside];
 	

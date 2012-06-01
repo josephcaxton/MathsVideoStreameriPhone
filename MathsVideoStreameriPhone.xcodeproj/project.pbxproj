@@ -305,6 +305,7 @@
 		7CC030F3157667810025C598 /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC030F2157667810025C598 /* MathsBackground.png */; };
 		7CC031041576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */; };
 		7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */; };
+		7CC031551578F00A0025C598 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC031541578F00A0025C598 /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -626,6 +627,8 @@
 		7CC030F2157667810025C598 /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
 		7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer_iphone.pdf; sourceTree = "<group>"; };
 		7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LearnersCloudTermsonapps.pdf; sourceTree = "<group>"; };
+		7CC031531578F00A0025C598 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		7CC031541578F00A0025C598 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -754,6 +757,8 @@
 				7CA2B1A615762E1F0068A6A4 /* Buy.m */,
 				7CA2B1A715762E300068A6A4 /* CustomStoreObserver.h */,
 				7CA2B1A815762E300068A6A4 /* CustomStoreObserver.m */,
+				7CC031531578F00A0025C598 /* CustomCell.h */,
+				7CC031541578F00A0025C598 /* CustomCell.m */,
 			);
 			name = ClientSideClasses;
 			sourceTree = "<group>";
@@ -1410,6 +1415,7 @@
 				7CA2B3B8157631520068A6A4 /* Reachability.m in Sources */,
 				7CA2B146157625D50068A6A4 /* AppDelegate.m in Sources */,
 				7CA2B3E0157648780068A6A4 /* main.m in Sources */,
+				7CC031551578F00A0025C598 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

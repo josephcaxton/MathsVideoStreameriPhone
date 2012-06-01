@@ -7,7 +7,7 @@
 //
 
 #import "TabBar.h"
-#import "Start.h"
+#import "VideoPlayer.h"
 //#import "AppDelegate.h"
 
 @implementation TabBar
@@ -54,18 +54,20 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.
     
-    // Do not rotate the first view on the first tab.
+    // Allow Orientation of only vidoe Player.
     
-    if(self.selectedIndex == 0 && [[[self.viewControllers objectAtIndex:0] visibleViewController] isKindOfClass:[Start class]]){
+    if(self.selectedIndex == 0 && [[[self.viewControllers objectAtIndex:0] visibleViewController] isKindOfClass:[VideoPlayer class]]){
         
-        return NO;
+        
+        return YES;
+
 
     }
         
     else
             
         {
-            return YES;
+            return NO;
         }
 }
 
