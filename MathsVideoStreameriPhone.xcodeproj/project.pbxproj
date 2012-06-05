@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C7F21DB157E1020005BB027 /* HowtouseVideoStreamer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C7F21DA157E1020005BB027 /* HowtouseVideoStreamer.pdf */; };
 		7CA2B136157625D50068A6A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B135157625D50068A6A4 /* UIKit.framework */; };
 		7CA2B138157625D50068A6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B137157625D50068A6A4 /* Foundation.framework */; };
 		7CA2B13A157625D50068A6A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B139157625D50068A6A4 /* CoreGraphics.framework */; };
@@ -303,12 +304,12 @@
 		7CC030EC157666B60025C598 /* TermsAndConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B1B415762EB70068A6A4 /* TermsAndConditions.m */; };
 		7CC030ED157666C10025C598 /* HowtoUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B1B615762EC50068A6A4 /* HowtoUse.m */; };
 		7CC030F3157667810025C598 /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC030F2157667810025C598 /* MathsBackground.png */; };
-		7CC031041576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */; };
 		7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */; };
 		7CC031551578F00A0025C598 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC031541578F00A0025C598 /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C7F21DA157E1020005BB027 /* HowtouseVideoStreamer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer.pdf; sourceTree = "<group>"; };
 		7CA2B131157625D50068A6A4 /* Maths Videos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maths Videos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA2B135157625D50068A6A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CA2B137157625D50068A6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -625,7 +626,6 @@
 		7CA2B3DE157647A50068A6A4 /* MathsVideoStreameriPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MathsVideoStreameriPhone-Prefix.pch"; sourceTree = "<group>"; };
 		7CA2B3DF157648780068A6A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CC030F2157667810025C598 /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
-		7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer_iphone.pdf; sourceTree = "<group>"; };
 		7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LearnersCloudTermsonapps.pdf; sourceTree = "<group>"; };
 		7CC031531578F00A0025C598 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		7CC031541578F00A0025C598 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
@@ -661,7 +661,7 @@
 				7CA2B1B715762EDA0068A6A4 /* Data Models */,
 				7CA2B1AA15762E590068A6A4 /* Classes */,
 				7CA2B19E15762DD10068A6A4 /* ClientSideClasses */,
-				7CA2B18A15762CBF0068A6A4 /* Resources */,
+				7CA2B18A15762CBF0068A6A4 /* Resource */,
 				7CA2B17415762C070068A6A4 /* Icons */,
 				7CA2B13B157625D50068A6A4 /* MathsVideoStreameriPhone */,
 				7CA2B134157625D50068A6A4 /* Frameworks */,
@@ -728,7 +728,7 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
-		7CA2B18A15762CBF0068A6A4 /* Resources */ = {
+		7CA2B18A15762CBF0068A6A4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				7CC030F2157667810025C598 /* MathsBackground.png */,
@@ -741,7 +741,7 @@
 				7CA2B18B15762CE20068A6A4 /* iTunesArtwork.png */,
 				7CA2B19C15762DB80068A6A4 /* BlackBackGround_Iphone.png */,
 			);
-			name = Resources;
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		7CA2B19E15762DD10068A6A4 /* ClientSideClasses */ = {
@@ -1044,7 +1044,7 @@
 				7CA2B2B215762F430068A6A4 /* img248.png */,
 				7CA2B2B315762F430068A6A4 /* img249.png */,
 				7CA2B2B415762F430068A6A4 /* img250.png */,
-				7CC031031576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf */,
+				7C7F21DA157E1020005BB027 /* HowtouseVideoStreamer.pdf */,
 				7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */,
 			);
 			name = "Video Images";
@@ -1386,8 +1386,8 @@
 				7CA2B3AE15762F440068A6A4 /* img250.png in Resources */,
 				7CA2B3BE157634470068A6A4 /* MainWindow.xib in Resources */,
 				7CC030F3157667810025C598 /* MathsBackground.png in Resources */,
-				7CC031041576790A0025C598 /* HowtouseVideoStreamer_iphone.pdf in Resources */,
 				7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */,
+				7C7F21DB157E1020005BB027 /* HowtouseVideoStreamer.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1428,6 +1428,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1443,6 +1444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "770E8234-C6A7-4917-8895-A2448C42AB40";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1453,6 +1455,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1462,6 +1465,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "79FB3ECD-07A8-4923-8120-5A9AA4E8A740";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "79FB3ECD-07A8-4923-8120-5A9AA4E8A740";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1471,6 +1475,7 @@
 		7CA2B15E157625D50068A6A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Prefix.pch";
 				INFOPLIST_FILE = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Info.plist";
@@ -1480,6 +1485,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "Maths Videos";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "770E8234-C6A7-4917-8895-A2448C42AB40";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
