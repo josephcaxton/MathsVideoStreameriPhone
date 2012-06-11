@@ -222,7 +222,7 @@ int dontShowPriceList = 0;
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	cell.detailTextLabel.text = [numberFormatter stringFromNumber:product.price];
 	cell.textLabel.text = [product localizedTitle];
-	
+	//NSLog(@"%@",[product localizedTitle]);
 
 
     
