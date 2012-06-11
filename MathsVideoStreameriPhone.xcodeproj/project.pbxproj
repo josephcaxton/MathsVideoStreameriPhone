@@ -303,9 +303,9 @@
 		7CC030EB157666830025C598 /* Help.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B1B215762EA80068A6A4 /* Help.m */; };
 		7CC030EC157666B60025C598 /* TermsAndConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B1B415762EB70068A6A4 /* TermsAndConditions.m */; };
 		7CC030ED157666C10025C598 /* HowtoUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B1B615762EC50068A6A4 /* HowtoUse.m */; };
-		7CC030F3157667810025C598 /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC030F2157667810025C598 /* MathsBackground.png */; };
 		7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */; };
 		7CC031551578F00A0025C598 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC031541578F00A0025C598 /* CustomCell.m */; };
+		7CDA00281585F5D90035619C /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA00271585F5D90035619C /* MathsBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -625,10 +625,10 @@
 		7CA2B3D8157644F80068A6A4 /* MathsVideoStreameriPhone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MathsVideoStreameriPhone-Info.plist"; sourceTree = "<group>"; };
 		7CA2B3DE157647A50068A6A4 /* MathsVideoStreameriPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MathsVideoStreameriPhone-Prefix.pch"; sourceTree = "<group>"; };
 		7CA2B3DF157648780068A6A4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7CC030F2157667810025C598 /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
 		7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LearnersCloudTermsonapps.pdf; sourceTree = "<group>"; };
 		7CC031531578F00A0025C598 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		7CC031541578F00A0025C598 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		7CDA00271585F5D90035619C /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -731,9 +731,9 @@
 		7CA2B18A15762CBF0068A6A4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7CC030F2157667810025C598 /* MathsBackground.png */,
 				7CA2B19A15762DA80068A6A4 /* Default.png */,
 				7CA2B19815762D990068A6A4 /* Default@2x.png */,
+				7CDA00271585F5D90035619C /* MathsBackground.png */,
 				7CA2B19315762D0D0068A6A4 /* Icon-Small-50.png */,
 				7CA2B19115762D040068A6A4 /* Icon-72.png */,
 				7CA2B18F15762CF50068A6A4 /* Icon@2x.png */,
@@ -1385,9 +1385,9 @@
 				7CA2B3AD15762F440068A6A4 /* img249.png in Resources */,
 				7CA2B3AE15762F440068A6A4 /* img250.png in Resources */,
 				7CA2B3BE157634470068A6A4 /* MainWindow.xib in Resources */,
-				7CC030F3157667810025C598 /* MathsBackground.png in Resources */,
 				7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */,
 				7C7F21DB157E1020005BB027 /* HowtouseVideoStreamer.pdf in Resources */,
+				7CDA00281585F5D90035619C /* MathsBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
