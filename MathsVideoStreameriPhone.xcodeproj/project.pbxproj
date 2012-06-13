@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C7F21DB157E1020005BB027 /* HowtouseVideoStreamer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C7F21DA157E1020005BB027 /* HowtouseVideoStreamer.pdf */; };
 		7CA2B136157625D50068A6A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B135157625D50068A6A4 /* UIKit.framework */; };
 		7CA2B138157625D50068A6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B137157625D50068A6A4 /* Foundation.framework */; };
 		7CA2B13A157625D50068A6A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B139157625D50068A6A4 /* CoreGraphics.framework */; };
@@ -305,11 +304,11 @@
 		7CC030ED157666C10025C598 /* HowtoUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2B1B615762EC50068A6A4 /* HowtoUse.m */; };
 		7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */; };
 		7CC031551578F00A0025C598 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC031541578F00A0025C598 /* CustomCell.m */; };
+		7CD26BC015887A4B00A80AA8 /* HowtouseVideoStreamer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */; };
 		7CDA00281585F5D90035619C /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA00271585F5D90035619C /* MathsBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C7F21DA157E1020005BB027 /* HowtouseVideoStreamer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer.pdf; sourceTree = "<group>"; };
 		7CA2B131157625D50068A6A4 /* Maths Videos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maths Videos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA2B135157625D50068A6A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CA2B137157625D50068A6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -628,6 +627,7 @@
 		7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LearnersCloudTermsonapps.pdf; sourceTree = "<group>"; };
 		7CC031531578F00A0025C598 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		7CC031541578F00A0025C598 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer.pdf; sourceTree = "<group>"; };
 		7CDA00271585F5D90035619C /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1044,8 +1044,8 @@
 				7CA2B2B215762F430068A6A4 /* img248.png */,
 				7CA2B2B315762F430068A6A4 /* img249.png */,
 				7CA2B2B415762F430068A6A4 /* img250.png */,
-				7C7F21DA157E1020005BB027 /* HowtouseVideoStreamer.pdf */,
 				7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */,
+				7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */,
 			);
 			name = "Video Images";
 			sourceTree = "<group>";
@@ -1386,8 +1386,8 @@
 				7CA2B3AE15762F440068A6A4 /* img250.png in Resources */,
 				7CA2B3BE157634470068A6A4 /* MainWindow.xib in Resources */,
 				7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */,
-				7C7F21DB157E1020005BB027 /* HowtouseVideoStreamer.pdf in Resources */,
 				7CDA00281585F5D90035619C /* MathsBackground.png in Resources */,
+				7CD26BC015887A4B00A80AA8 /* HowtouseVideoStreamer.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
