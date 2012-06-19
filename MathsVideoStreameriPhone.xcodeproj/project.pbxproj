@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C01DF591588EA4400F839E2 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C01DF4C1588EA4400F839E2 /* FBDialog.bundle */; };
+		7C01DF5A1588EA4400F839E2 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C01DF521588EA4400F839E2 /* libfacebook_ios_sdk.a */; };
 		7CA2B136157625D50068A6A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B135157625D50068A6A4 /* UIKit.framework */; };
 		7CA2B138157625D50068A6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B137157625D50068A6A4 /* Foundation.framework */; };
 		7CA2B13A157625D50068A6A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA2B139157625D50068A6A4 /* CoreGraphics.framework */; };
@@ -306,9 +308,32 @@
 		7CC031551578F00A0025C598 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC031541578F00A0025C598 /* CustomCell.m */; };
 		7CD26BC015887A4B00A80AA8 /* HowtouseVideoStreamer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */; };
 		7CDA00281585F5D90035619C /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA00271585F5D90035619C /* MathsBackground.png */; };
+		7CFA6F231590CDF600EE44A1 /* Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA6F221590CDF500EE44A1 /* Share.m */; };
+		7CFA6F261590CFB600EE44A1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F251590CFB600EE44A1 /* twitter.png */; };
+		7CFA6F281590CFC700EE44A1 /* logoutfacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F271590CFC700EE44A1 /* logoutfacebook.png */; };
+		7CFA6F2A1590CFD900EE44A1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F291590CFD900EE44A1 /* facebook.png */; };
+		7CFA6F2C1590CFEA00EE44A1 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F2B1590CFEA00EE44A1 /* mail.png */; };
+		7CFA6F2E1590D01600EE44A1 /* shareIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F2D1590D01600EE44A1 /* shareIcon.png */; };
+		7CFA6F301590D5AE00EE44A1 /* 23-bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F2F1590D5AE00EE44A1 /* 23-bird.png */; };
+		7CFA6F321590D66900EE44A1 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFA6F311590D66900EE44A1 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C01DF4A1588EA4400F839E2 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		7C01DF4B1588EA4400F839E2 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		7C01DF4C1588EA4400F839E2 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		7C01DF4D1588EA4400F839E2 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		7C01DF4E1588EA4400F839E2 /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		7C01DF4F1588EA4400F839E2 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		7C01DF501588EA4400F839E2 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		7C01DF511588EA4400F839E2 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		7C01DF521588EA4400F839E2 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		7C01DF531588EA4400F839E2 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		7C01DF541588EA4400F839E2 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		7C01DF551588EA4400F839E2 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		7C01DF561588EA4400F839E2 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		7C01DF571588EA4400F839E2 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		7C01DF581588EA4400F839E2 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		7CA2B131157625D50068A6A4 /* Maths Videos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maths Videos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA2B135157625D50068A6A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CA2B137157625D50068A6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -629,6 +654,15 @@
 		7CC031541578F00A0025C598 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer.pdf; sourceTree = "<group>"; };
 		7CDA00271585F5D90035619C /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
+		7CFA6F211590CDF500EE44A1 /* Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
+		7CFA6F221590CDF500EE44A1 /* Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
+		7CFA6F251590CFB600EE44A1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		7CFA6F271590CFC700EE44A1 /* logoutfacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoutfacebook.png; sourceTree = "<group>"; };
+		7CFA6F291590CFD900EE44A1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		7CFA6F2B1590CFEA00EE44A1 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		7CFA6F2D1590D01600EE44A1 /* shareIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shareIcon.png; sourceTree = "<group>"; };
+		7CFA6F2F1590D5AE00EE44A1 /* 23-bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "23-bird.png"; sourceTree = "<group>"; };
+		7CFA6F311590D66900EE44A1 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -636,6 +670,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CFA6F321590D66900EE44A1 /* Twitter.framework in Frameworks */,
 				7CA2B16B157629430068A6A4 /* libsqlite3.dylib in Frameworks */,
 				7CA2B169157629300068A6A4 /* CFNetwork.framework in Frameworks */,
 				7CA2B167157629230068A6A4 /* MessageUI.framework in Frameworks */,
@@ -646,15 +681,39 @@
 				7CA2B138157625D50068A6A4 /* Foundation.framework in Frameworks */,
 				7CA2B13A157625D50068A6A4 /* CoreGraphics.framework in Frameworks */,
 				7CA2B3B215762F7A0068A6A4 /* libGoogleAnalytics.a in Frameworks */,
+				7C01DF5A1588EA4400F839E2 /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C01DF491588EA4400F839E2 /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				7C01DF4A1588EA4400F839E2 /* Facebook.h */,
+				7C01DF4B1588EA4400F839E2 /* FBConnect.h */,
+				7C01DF4C1588EA4400F839E2 /* FBDialog.bundle */,
+				7C01DF4D1588EA4400F839E2 /* FBDialog.h */,
+				7C01DF4E1588EA4400F839E2 /* FBFrictionlessRequestSettings.h */,
+				7C01DF4F1588EA4400F839E2 /* FBLoginDialog.h */,
+				7C01DF501588EA4400F839E2 /* FBRequest.h */,
+				7C01DF511588EA4400F839E2 /* JSON.h */,
+				7C01DF521588EA4400F839E2 /* libfacebook_ios_sdk.a */,
+				7C01DF531588EA4400F839E2 /* NSObject+SBJSON.h */,
+				7C01DF541588EA4400F839E2 /* NSString+SBJSON.h */,
+				7C01DF551588EA4400F839E2 /* SBJSON.h */,
+				7C01DF561588EA4400F839E2 /* SBJsonBase.h */,
+				7C01DF571588EA4400F839E2 /* SBJsonParser.h */,
+				7C01DF581588EA4400F839E2 /* SBJsonWriter.h */,
+			);
+			path = "facebook-ios-sdk";
+			sourceTree = "<group>";
+		};
 		7CA2B126157625D40068A6A4 = {
 			isa = PBXGroup;
 			children = (
+				7C01DF491588EA4400F839E2 /* facebook-ios-sdk */,
 				7CA2B3D51576433A0068A6A4 /* Supporting Files */,
 				7CA2B3AF15762F5C0068A6A4 /* Analytics */,
 				7CA2B1BA15762F150068A6A4 /* Video Images */,
@@ -683,6 +742,7 @@
 				7CA2B16C157629680068A6A4 /* Reachability.h */,
 				7CA2B16D157629680068A6A4 /* Reachability.m */,
 				7CA2B16A157629430068A6A4 /* libsqlite3.dylib */,
+				7CFA6F311590D66900EE44A1 /* Twitter.framework */,
 				7CA2B168157629300068A6A4 /* CFNetwork.framework */,
 				7CA2B166157629230068A6A4 /* MessageUI.framework */,
 				7CA2B164157629140068A6A4 /* StoreKit.framework */,
@@ -724,6 +784,7 @@
 				7CA2B17A15762C1F0068A6A4 /* 80-shopping-cart.png */,
 				7CA2B17B15762C1F0068A6A4 /* 130-dice.png */,
 				7CA2B18315762C400068A6A4 /* buynow.jpeg */,
+				7CFA6F2F1590D5AE00EE44A1 /* 23-bird.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -740,6 +801,11 @@
 				7CA2B18D15762CEE0068A6A4 /* Icon.png */,
 				7CA2B18B15762CE20068A6A4 /* iTunesArtwork.png */,
 				7CA2B19C15762DB80068A6A4 /* BlackBackGround_Iphone.png */,
+				7CFA6F2B1590CFEA00EE44A1 /* mail.png */,
+				7CFA6F291590CFD900EE44A1 /* facebook.png */,
+				7CFA6F271590CFC700EE44A1 /* logoutfacebook.png */,
+				7CFA6F251590CFB600EE44A1 /* twitter.png */,
+				7CFA6F2D1590D01600EE44A1 /* shareIcon.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -759,6 +825,8 @@
 				7CA2B1A815762E300068A6A4 /* CustomStoreObserver.m */,
 				7CC031531578F00A0025C598 /* CustomCell.h */,
 				7CC031541578F00A0025C598 /* CustomCell.m */,
+				7CFA6F211590CDF500EE44A1 /* Share.h */,
+				7CFA6F221590CDF500EE44A1 /* Share.m */,
 			);
 			name = ClientSideClasses;
 			sourceTree = "<group>";
@@ -1388,6 +1456,13 @@
 				7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */,
 				7CDA00281585F5D90035619C /* MathsBackground.png in Resources */,
 				7CD26BC015887A4B00A80AA8 /* HowtouseVideoStreamer.pdf in Resources */,
+				7C01DF591588EA4400F839E2 /* FBDialog.bundle in Resources */,
+				7CFA6F261590CFB600EE44A1 /* twitter.png in Resources */,
+				7CFA6F281590CFC700EE44A1 /* logoutfacebook.png in Resources */,
+				7CFA6F2A1590CFD900EE44A1 /* facebook.png in Resources */,
+				7CFA6F2C1590CFEA00EE44A1 /* mail.png in Resources */,
+				7CFA6F2E1590D01600EE44A1 /* shareIcon.png in Resources */,
+				7CFA6F301590D5AE00EE44A1 /* 23-bird.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1416,6 +1491,7 @@
 				7CA2B146157625D50068A6A4 /* AppDelegate.m in Sources */,
 				7CA2B3E0157648780068A6A4 /* main.m in Sources */,
 				7CC031551578F00A0025C598 /* CustomCell.m in Sources */,
+				7CFA6F231590CDF600EE44A1 /* Share.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1443,7 +1519,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PROVISIONING_PROFILE = "770E8234-C6A7-4917-8895-A2448C42AB40";
 				SDKROOT = iphoneos;
 			};
@@ -1463,7 +1539,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "79FB3ECD-07A8-4923-8120-5A9AA4E8A740";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "79FB3ECD-07A8-4923-8120-5A9AA4E8A740";
@@ -1479,10 +1555,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Prefix.pch";
 				INFOPLIST_FILE = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = "Maths Videos";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "770E8234-C6A7-4917-8895-A2448C42AB40";
@@ -1496,10 +1573,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Prefix.pch";
 				INFOPLIST_FILE = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = "Maths Videos";
 				WRAPPER_EXTENSION = app;

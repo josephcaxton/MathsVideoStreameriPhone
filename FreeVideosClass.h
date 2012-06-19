@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import "FBConnect.h"
+
+
 @interface FreeVideosClass :  UITableViewController  <UITableViewDataSource, UITableViewDelegate,MFMailComposeViewControllerDelegate>{
     
     NSMutableArray *ArrayofConfigObjects;
@@ -15,6 +18,8 @@
     NSMutableArray *ImageObjects;
     NSMutableArray *ProductsSubscibedTo;
     BOOL FullSubscription;
+    
+   
     
 }
 
@@ -24,6 +29,7 @@
 @property (nonatomic, retain)  NSMutableArray *ProductsSubscibedTo;
 @property (nonatomic, assign) BOOL FullSubscription;
 
+
 -(BOOL)ShouldIDownloadOrNot:(NSString*)urllPath:(NSString*)LocalFileLocation;
 -(void)GetConfigFileFromServeWriteToPath:(NSString*)Path;
 -(void)Alertfailedconnection;
@@ -32,4 +38,5 @@
 -(void)RefreshTable:(NSNotification *)note;
 -(void)RefeshTable;
 -(void)AdjustProductSubscribedTo;
+
 @end
