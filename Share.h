@@ -11,16 +11,23 @@
 #import "FBConnect.h"
 #import "AppDelegate.h"
 #import <Twitter/Twitter.h>
+#import "GANTracker.h"
 
 @interface Share : UITableViewController<MFMailComposeViewControllerDelegate,FBSessionDelegate,FBDialogDelegate>{
     
     
     Facebook *facebook;
     UIButton *logoutFacebook;
+    UIActivityIndicatorView * activityIndicator;
+
     
 }
 
 @property (nonatomic, retain) Facebook *facebook;
 @property (nonatomic, retain) UIButton *logoutFacebook;
+@property (nonatomic, retain)  UIActivityIndicatorView * activityIndicator;
+
+- (void)AddProgress;
+
 
 @end

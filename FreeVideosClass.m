@@ -514,7 +514,7 @@
         [SendMailcontroller setToRecipients:SendTo];
         [SendMailcontroller setSubject:[NSString stringWithFormat:@"%@ Maths video streaming iPhone",DeviceID]];
         
-        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@"Additional Messages can be added to this email "] isHTML:NO];
+        [SendMailcontroller setMessageBody:[NSString stringWithFormat:@"Add message here "] isHTML:NO];
         [self presentModalViewController:SendMailcontroller animated:YES];
         
 		

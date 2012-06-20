@@ -14,7 +14,7 @@
 
 @implementation Share
 
-@synthesize facebook,logoutFacebook;
+@synthesize facebook,logoutFacebook,activityIndicator;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -30,6 +30,14 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Share this app";
+    
+    NSError *error;
+    // Report to  analytics
+    if (![[GANTracker sharedTracker] trackPageview:@"/SocialMediaPage"
+                                         withError:&error]) {
+        NSLog(@"error in trackPageview");
+    }
+
 
 }
 
@@ -213,6 +221,17 @@
     
     if(MFMailComposeResultSent){
         
+        NSError *error;
+        // Report to  analytics
+        if (![[GANTracker sharedTracker] trackEvent:@"Shared via email"
+                                             action:@"Email shared"
+                                              label:@"Email shared"
+                                              value:69
+                                          withError:&error]) {
+            NSLog(@"error in trackEvent");
+        }
+
+        
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         // Give user one free video.
         if(![prefs objectForKey:@"AddOneFree"]){
@@ -319,6 +338,17 @@
 
 - (void)dialogDidComplete:(FBDialog *)dialog {
     
+    NSError *error;
+    // Report to  analytics
+    if (![[GANTracker sharedTracker] trackEvent:@"Shared via facebook"
+                                         action:@"Facebook shared"
+                                          label:@"Facebook shared"
+                                          value:69
+                                      withError:&error]) {
+        NSLog(@"error in trackEvent");
+    }
+
+    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     // Give user one free video.
     if(![prefs objectForKey:@"AddOneFree"]){
@@ -344,6 +374,10 @@
 
 -(void)Twit {
     
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    appDelegate.SecondThread = [[NSThread alloc]initWithTarget:self selector:@selector(AddProgress) object:nil];
+    [appDelegate.SecondThread start];
+    
     if ([TWTweetComposeViewController canSendTweet])
     {
         NSString *UrlString = @"http://itunes.apple.com/us/app/maths-videos/id522347113?ls=1&mt=8";
@@ -355,13 +389,23 @@
         
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         
-        tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result) { 
+        tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result) {
+             NSError *error;
             switch (result) {
                 case TWTweetComposeViewControllerResultCancelled:                    
                     break;
                     
                 case TWTweetComposeViewControllerResultDone:
                     
+                    // Report to  analytics
+                    if (![[GANTracker sharedTracker] trackEvent:@"Shared via twitter"
+                                                         action:@"twitter shared"
+                                                          label:@"twitter shared"
+                                                          value:69
+                                                      withError:&error]) {
+                        NSLog(@"error in trackEvent");
+                    }
+
                     
                     // Give user one free video.
                     if(![prefs objectForKey:@"AddOneFree"]){
@@ -382,11 +426,12 @@
         
         
         
-        
-	    [self presentModalViewController:tweetSheet animated:YES];
+         [activityIndicator stopAnimating];
+	    [self presentModalViewController:tweetSheet animated:YES]; 
     }
     else
     {
+        [activityIndicator stopAnimating];
         UIAlertView *alertView = [[UIAlertView alloc] 
                                   initWithTitle:@"Sorry"                                                             
                                   message:@"You can't send a tweet right now, make sure  your device has an internet connection and you have at least one Twitter account setup"                                                          
@@ -396,6 +441,23 @@
         [alertView show];
     }
     
+}
+
+- (void)AddProgress{
+	
+    @autoreleasepool {
+        
+        
+        activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+        [activityIndicator stopAnimating];
+        [activityIndicator hidesWhenStopped];
+        activityIndicator.center = CGPointMake(250, 185);
+        
+        [self.view addSubview:activityIndicator];
+        [activityIndicator startAnimating];
+        
+    }
+	
 }
 
 
