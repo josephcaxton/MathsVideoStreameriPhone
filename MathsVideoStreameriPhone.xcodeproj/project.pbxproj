@@ -308,6 +308,7 @@
 		7CC031551578F00A0025C598 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC031541578F00A0025C598 /* CustomCell.m */; };
 		7CD26BC015887A4B00A80AA8 /* HowtouseVideoStreamer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */; };
 		7CD3E6AB15A1C5BA009F527C /* FollowUsOnTwitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD3E6AA15A1C5BA009F527C /* FollowUsOnTwitter.png */; };
+		7CD6763215A1DED20045B3C8 /* LikeUsOnFaceBook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6763115A1DED20045B3C8 /* LikeUsOnFaceBook.png */; };
 		7CDA00281585F5D90035619C /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA00271585F5D90035619C /* MathsBackground.png */; };
 		7CFA6F231590CDF600EE44A1 /* Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA6F221590CDF500EE44A1 /* Share.m */; };
 		7CFA6F261590CFB600EE44A1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F251590CFB600EE44A1 /* twitter.png */; };
@@ -655,6 +656,7 @@
 		7CC031541578F00A0025C598 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer.pdf; sourceTree = "<group>"; };
 		7CD3E6AA15A1C5BA009F527C /* FollowUsOnTwitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FollowUsOnTwitter.png; sourceTree = "<group>"; };
+		7CD6763115A1DED20045B3C8 /* LikeUsOnFaceBook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LikeUsOnFaceBook.png; sourceTree = "<group>"; };
 		7CDA00271585F5D90035619C /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
 		7CFA6F211590CDF500EE44A1 /* Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
 		7CFA6F221590CDF500EE44A1 /* Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
@@ -809,6 +811,7 @@
 				7CFA6F251590CFB600EE44A1 /* twitter.png */,
 				7CD3E6AA15A1C5BA009F527C /* FollowUsOnTwitter.png */,
 				7CFA6F2D1590D01600EE44A1 /* shareIcon.png */,
+				7CD6763115A1DED20045B3C8 /* LikeUsOnFaceBook.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -1467,6 +1470,7 @@
 				7CFA6F2E1590D01600EE44A1 /* shareIcon.png in Resources */,
 				7CFA6F301590D5AE00EE44A1 /* 23-bird.png in Resources */,
 				7CD3E6AB15A1C5BA009F527C /* FollowUsOnTwitter.png in Resources */,
+				7CD6763215A1DED20045B3C8 /* LikeUsOnFaceBook.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
