@@ -307,6 +307,7 @@
 		7CC031171577CA3E0025C598 /* LearnersCloudTermsonapps.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CC031161577CA3E0025C598 /* LearnersCloudTermsonapps.pdf */; };
 		7CC031551578F00A0025C598 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC031541578F00A0025C598 /* CustomCell.m */; };
 		7CD26BC015887A4B00A80AA8 /* HowtouseVideoStreamer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */; };
+		7CD3E6AB15A1C5BA009F527C /* FollowUsOnTwitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CD3E6AA15A1C5BA009F527C /* FollowUsOnTwitter.png */; };
 		7CDA00281585F5D90035619C /* MathsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDA00271585F5D90035619C /* MathsBackground.png */; };
 		7CFA6F231590CDF600EE44A1 /* Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA6F221590CDF500EE44A1 /* Share.m */; };
 		7CFA6F261590CFB600EE44A1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFA6F251590CFB600EE44A1 /* twitter.png */; };
@@ -653,6 +654,7 @@
 		7CC031531578F00A0025C598 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		7CC031541578F00A0025C598 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		7CD26BBF15887A4B00A80AA8 /* HowtouseVideoStreamer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = HowtouseVideoStreamer.pdf; sourceTree = "<group>"; };
+		7CD3E6AA15A1C5BA009F527C /* FollowUsOnTwitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FollowUsOnTwitter.png; sourceTree = "<group>"; };
 		7CDA00271585F5D90035619C /* MathsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathsBackground.png; sourceTree = "<group>"; };
 		7CFA6F211590CDF500EE44A1 /* Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Share.h; sourceTree = "<group>"; };
 		7CFA6F221590CDF500EE44A1 /* Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Share.m; sourceTree = "<group>"; };
@@ -805,6 +807,7 @@
 				7CFA6F291590CFD900EE44A1 /* facebook.png */,
 				7CFA6F271590CFC700EE44A1 /* logoutfacebook.png */,
 				7CFA6F251590CFB600EE44A1 /* twitter.png */,
+				7CD3E6AA15A1C5BA009F527C /* FollowUsOnTwitter.png */,
 				7CFA6F2D1590D01600EE44A1 /* shareIcon.png */,
 			);
 			name = Resource;
@@ -1463,6 +1466,7 @@
 				7CFA6F2C1590CFEA00EE44A1 /* mail.png in Resources */,
 				7CFA6F2E1590D01600EE44A1 /* shareIcon.png in Resources */,
 				7CFA6F301590D5AE00EE44A1 /* 23-bird.png in Resources */,
+				7CD3E6AB15A1C5BA009F527C /* FollowUsOnTwitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
