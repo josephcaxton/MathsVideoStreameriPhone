@@ -334,7 +334,7 @@
 		7C01DF561588EA4400F839E2 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		7C01DF571588EA4400F839E2 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		7C01DF581588EA4400F839E2 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		7CA2B131157625D50068A6A4 /* Maths Videos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maths Videos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA2B131157625D50068A6A4 /* Maths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maths.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA2B135157625D50068A6A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7CA2B137157625D50068A6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7CA2B139157625D50068A6A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -731,7 +731,7 @@
 		7CA2B132157625D50068A6A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CA2B131157625D50068A6A4 /* Maths Videos.app */,
+				7CA2B131157625D50068A6A4 /* Maths.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1151,7 +1151,7 @@
 			);
 			name = MathsVideoStreameriPhone;
 			productName = MathsVideoStreameriPhone;
-			productReference = 7CA2B131157625D50068A6A4 /* Maths Videos.app */;
+			productReference = 7CA2B131157625D50068A6A4 /* Maths.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1505,7 +1505,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1521,6 +1521,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PROVISIONING_PROFILE = "770E8234-C6A7-4917-8895-A2448C42AB40";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "770E8234-C6A7-4917-8895-A2448C42AB40";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1551,17 +1552,19 @@
 		7CA2B15E157625D50068A6A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Joseph caxton (99S98QLWW3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Prefix.pch";
 				INFOPLIST_FILE = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
-				PRODUCT_NAME = "Maths Videos";
+				PRODUCT_NAME = Maths;
+				PROVISIONING_PROFILE = "770E8234-C6A7-4917-8895-A2448C42AB40";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "770E8234-C6A7-4917-8895-A2448C42AB40";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1570,16 +1573,18 @@
 		7CA2B15F157625D50068A6A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Prefix.pch";
 				INFOPLIST_FILE = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
-				PRODUCT_NAME = "Maths Videos";
+				PRODUCT_NAME = Maths;
+				PROVISIONING_PROFILE = "79FB3ECD-07A8-4923-8120-5A9AA4E8A740";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
