@@ -435,10 +435,10 @@
         NSString *UrlString = @"http://itunes.apple.com/us/app/maths-videos/id522347113?ls=1&mt=8";
         
         TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
-        [tweetSheet setInitialText:@"Checkout LearnersCloud video app. Quality maths revision videos. :)"];
+        [tweetSheet setInitialText:@"Checkout #LearnersCloud video app. Quality maths revision videos. :)"];
+        [tweetSheet addImage:[UIImage imageNamed:@"Icon.png"]];
         [tweetSheet addURL:[NSURL URLWithString:UrlString]];
-        [tweetSheet addImage:[UIImage imageNamed:@"Icon"]];
-        
+                
         NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
         
         tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result) {
