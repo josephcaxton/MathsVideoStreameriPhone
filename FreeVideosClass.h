@@ -38,7 +38,7 @@
 -(void)ConfigureProductList:(NSString *)ProductID;
 -(void)RefreshTable:(NSNotification *)note;
 -(void)RefeshTable;
--(void)AdjustProductSubscribedTo;
+//-(void)AdjustProductSubscribedTo;
 
 - (void)reviewPressed;
 
