@@ -56,7 +56,7 @@
     int i;
     NSString *loadString;
     
-    for(i = 0; i < 248; i++) {
+    for(i = 0; i < 260; i++) {
         loadString = [NSString stringWithFormat:@"img%d", i + 1]; 
         [ImageObjects addObject:[UIImage imageNamed:loadString]];
         
