@@ -25,7 +25,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
 
 @synthesize window;
 @synthesize tabBarController;
-@synthesize SecondThread,SelectProductID,buyScreen,DomainName,SubscriptionStatusData,PassageFlag,UserEmail,AccessAll,m_facebook;
+@synthesize SecondThread,SelectProductID,buyScreen,DomainName,SubscriptionStatusData,PassageFlag,EmailFlag,UserEmail,DoesUserHaveEmail,AccessAll,m_facebook;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -265,16 +265,20 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict {
     
-    /*if ([elementName isEqualToString:@"ProductIdentifier"]) {
+    if ([elementName isEqualToString:@"hasSubscription"]) {
         
         PassageFlag = TRUE;
         
     }
-    else if([elementName isEqualToString:@"EMail"]){
+    else if([elementName isEqualToString:@"hasEmail"]){
         
+        PassageFlag = FALSE;
         EmailFlag = TRUE;
-    } */
+    }
+    
 }
+    
+    // NSLog(@"%@", elementName);}
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
     NSString *CleanString = [string stringByTrimmingCharactersInSet:
@@ -282,8 +286,8 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
     if([CleanString isEqualToString:@""]){
         
         //Do nothing
-        //PassageFlag = FALSE;
-        //EmailFlag = FALSE;
+        PassageFlag = FALSE;
+        EmailFlag = FALSE;
         return;
         
     }
@@ -309,18 +313,35 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
         EmailFlag = FALSE;
     } */
     
-    NSString *UserHasCurrentSubscription = CleanString;
-    
-    if([UserHasCurrentSubscription isEqualToString:@"True"]){ 
+    if(PassageFlag == TRUE){
         
-        AccessAll = TRUE; 
+        NSString *UserHasCurrentSubscription = CleanString;
+        
+        if([UserHasCurrentSubscription isEqualToString:@"True"]){ 
+            
+            AccessAll = TRUE; 
+            
+        }
+        else {
+            AccessAll = FALSE;
+        }
         
     }
-    else {
-        AccessAll = FALSE;
-    }
     
-    // NSLog(@"%@",UserHasCurrentSubscription);
+    if(EmailFlag == TRUE){
+        
+        NSString *UserHasEmail = CleanString;
+        if([UserHasEmail isEqualToString:@"True"]){ 
+            
+            DoesUserHaveEmail = TRUE; 
+            
+        }
+        else {
+            DoesUserHaveEmail = FALSE; 
+        }
+        
+        
+    }
     
 
 }
