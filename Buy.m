@@ -30,9 +30,10 @@ int dontShowPriceList = 0;
 	
 		observer = [[CustomStoreObserver alloc] init];
 		dontShowPriceList = 0;
-		
+    self.navigationItem.title = @"Subscribe";
+
     
-}
+   }
 
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -210,11 +211,11 @@ int dontShowPriceList = 0;
 	UIButton *BuyNow = [UIButton buttonWithType:UIButtonTypeRoundedRect];  
 	
 	//[BuyNow setTitle:@""  forState:UIControlStateNormal];
-	BuyNow.frame = CGRectMake(178, 30, 75, 44);
+	BuyNow.frame = CGRectMake(150, 30, 100, 39);
 	BuyNow.tag = indexPath.row;
 	[BuyNow addTarget:self action:@selector(BuyVideo:) forControlEvents:UIControlEventTouchUpInside];
 	
-	UIImage *buttonImageNormal = [UIImage imageNamed:@"buynow.jpeg"];
+	UIImage *buttonImageNormal = [UIImage imageNamed:@"buy_now.png"];
 	//UIImage *strechableButtonImageNormal = [buttonImageNormal stretchableImageWithLeftCapWidth:0 topCapHeight:0];
 	[BuyNow setBackgroundImage:buttonImageNormal forState:UIControlStateNormal];
 	

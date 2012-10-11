@@ -28,6 +28,7 @@
     // this is to handle return from facebook
     
     Facebook *m_facebook;
+    NSNumber *DeviceScreenType; // if this is IPhone5 then it should be 1136
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -45,6 +46,7 @@
 @property (nonatomic, assign) BOOL DoesUserHaveEmail;
 @property (nonatomic, assign) BOOL AccessAll;
 @property (nonatomic, retain)  Facebook *m_facebook;
+@property (nonatomic, retain) NSNumber *DeviceScreenType;
 
 - (NSString *)applicationDocumentsDirectory;
 -(BOOL)isDeviceConnectedToInternet;
@@ -52,6 +54,6 @@
 - (NSString *)GetUUID;
 -(void)SubscriptionStatus:(NSString *)DeviceID;
 //-(void)WorkOutSubsriptionName:(NSMutableArray*)SubscibedProductsInArray;
-
+-(BOOL)IsThisiPhone5;
 @end
 
