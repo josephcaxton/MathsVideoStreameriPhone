@@ -15,6 +15,7 @@
 		7C2E640816256EE400EB9190 /* web_promo_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E640716256EE400EB9190 /* web_promo_btn.png */; };
 		7C2E640F162596C900EB9190 /* free_and_paid_apps.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E640D162596C900EB9190 /* free_and_paid_apps.png */; };
 		7C2E6410162596C900EB9190 /* free_and_paid_apps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E640E162596C900EB9190 /* free_and_paid_apps@2x.png */; };
+		7C6BE4B716E777B200122F68 /* ListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BE4B616E777B200122F68 /* ListCell.m */; };
 		7C80E8091624151500AE6CA2 /* back320x450.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C80E8071624151500AE6CA2 /* back320x450.png */; };
 		7C80E80A1624151500AE6CA2 /* back320x450@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C80E8081624151500AE6CA2 /* back320x450@2x.png */; };
 		7C80E80E1624154C00AE6CA2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C80E80B1624154B00AE6CA2 /* Default-568h@2x.png */; };
@@ -368,6 +369,8 @@
 		7C2E640716256EE400EB9190 /* web_promo_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_promo_btn.png; sourceTree = "<group>"; };
 		7C2E640D162596C900EB9190 /* free_and_paid_apps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = free_and_paid_apps.png; sourceTree = "<group>"; };
 		7C2E640E162596C900EB9190 /* free_and_paid_apps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "free_and_paid_apps@2x.png"; sourceTree = "<group>"; };
+		7C6BE4B516E777B200122F68 /* ListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListCell.h; sourceTree = "<group>"; };
+		7C6BE4B616E777B200122F68 /* ListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListCell.m; sourceTree = "<group>"; };
 		7C80E8071624151500AE6CA2 /* back320x450.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back320x450.png; sourceTree = "<group>"; };
 		7C80E8081624151500AE6CA2 /* back320x450@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back320x450@2x.png"; sourceTree = "<group>"; };
 		7C80E80B1624154B00AE6CA2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -769,9 +772,19 @@
 			path = "facebook-ios-sdk";
 			sourceTree = "<group>";
 		};
+		7C6BE4B416E7775F00122F68 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C6BE4B516E777B200122F68 /* ListCell.h */,
+				7C6BE4B616E777B200122F68 /* ListCell.m */,
+			);
+			name = "Table Cells";
+			sourceTree = "<group>";
+		};
 		7CA2B126157625D40068A6A4 = {
 			isa = PBXGroup;
 			children = (
+				7C6BE4B416E7775F00122F68 /* Table Cells */,
 				7CD6D92516973B62004BCB15 /* Files */,
 				7C01DF491588EA4400F839E2 /* facebook-ios-sdk */,
 				7CA2B3D51576433A0068A6A4 /* Supporting Files */,
@@ -1618,6 +1631,7 @@
 				7CC031551578F00A0025C598 /* CustomCell.m in Sources */,
 				7CFA6F231590CDF600EE44A1 /* Share.m in Sources */,
 				7C80E83B162458A500AE6CA2 /* UnderlinedButton.m in Sources */,
+				7C6BE4B716E777B200122F68 /* ListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1700,7 +1714,8 @@
 		7CA2B15F157625D50068A6A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Theta Computer Services Limited";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Theta Computer Services Limited";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Prefix.pch";
 				INFOPLIST_FILE = "MathsVideoStreameriPhone/MathsVideoStreameriPhone-Info.plist";
@@ -1711,7 +1726,8 @@
 					"\"$(SRCROOT)/facebook-ios-sdk\"",
 				);
 				PRODUCT_NAME = GCSE;
-				PROVISIONING_PROFILE = "79FB3ECD-07A8-4923-8120-5A9AA4E8A740";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
