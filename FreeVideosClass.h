@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MessageUI/MessageUI.h>
 #import "FBConnect.h"
 #import "GANTracker.h"
 
 
-@interface FreeVideosClass :  UITableViewController  <UITableViewDataSource, UITableViewDelegate,UIAlertViewDelegate,MFMailComposeViewControllerDelegate,UISearchBarDelegate>{
+@interface FreeVideosClass :  UITableViewController  <UITableViewDataSource, UITableViewDelegate,UIAlertViewDelegate,UISearchBarDelegate>{
     
     NSMutableArray *ArrayofConfigObjects;
     NSMutableArray *filteredArrayofConfigObjects;
