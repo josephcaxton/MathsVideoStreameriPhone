@@ -25,7 +25,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
 
 @synthesize window;
 @synthesize tabBarController;
-@synthesize SecondThread,SelectProductID,buyScreen,DomainName,SubscriptionStatusData,PassageFlag,EmailFlag,UserEmail,DoesUserHaveEmail,AccessAll,m_facebook,DeviceScreenType;
+@synthesize SecondThread,SelectProductID,buyScreen,DomainName,SubscriptionStatusData,PassageFlag,EmailFlag,UserEmail,DoesUserHaveEmail,AccessAll,m_facebook,DeviceScreenType,FlagToLoginOrLogout;
 
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
@@ -40,9 +40,11 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
    // [tabBarController setViewControllers:viewControllers];
     
     SecondThread = nil;
-    DomainName = @"http://learnerscloud.com";
+    DomainName = @"https://learnerscloud.com";
     
-    
+    // This flag 0 = do nothing  1= login  2 = logout
+    FlagToLoginOrLogout = [NSNumber numberWithInteger:0];
+
     //Check phone Screen Size
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
         if([UIScreen mainScreen].bounds.size.height == 568.0){
@@ -548,8 +550,8 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
     
     //NSString *DeviceUDID = [NSString stringWithFormat:@"%@",[UIDevice currentDevice].uniqueIdentifier];
     // We don't support notifiation on < ios any more
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")){
-        NSString *DeviceUDID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    //if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")){
+        NSString *DeviceUDID = @"Deprecated";//[[[UIDevice currentDevice] identifierForVendor] UUIDString];
     
     NSString *DeviceTokenRemoveCh1 = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     
@@ -557,7 +559,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
     
     
     NSURLConnection *conn;
-    NSString *queryString = [NSString stringWithFormat:@"http://www.learnerscloud.com/services/ios/deviceToken.asmx/Update?UDID=%@&deviceToken=%@" , DeviceUDID, DeviceToken ];
+    NSString *queryString = [NSString stringWithFormat:@"http://www.learnerscloud.com/services/ios/videosubscription.asmx/UpdateDeviceToken?UDID=%@&deviceToken=%@" , DeviceUDID, DeviceToken ];
     NSURL *url = [NSURL URLWithString:queryString];
     
     NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
@@ -570,7 +572,7 @@ static NSString* const kAnalyticsAccountId = @"UA-31484592-1";
         
     }
     }
-}
+//}
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
     
