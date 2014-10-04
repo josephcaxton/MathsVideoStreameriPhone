@@ -68,6 +68,8 @@
 
 -(void)viewWillAppear:(BOOL)animated{
 	
+    if (!moviePlayerViewController){
+        
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     
     if(appDelegate.isDeviceConnectedToInternet){
@@ -146,6 +148,7 @@
         
         [self.navigationController popViewControllerAnimated:YES];
         
+    }
     }
 }
 
